@@ -5,8 +5,8 @@ var rssiQuality = require('plott-rssi-quality');
  *
  * @module plott/qualityDistance
  * @category helper
- * @param {Integer} dBm RSSI dBm
- * @param {Number} maximum coverage of signal
+ * @param {Integer} m dBm RSSI dBm
+ * @param {Number} p maximum coverage of signal
  * @return {Number} distance
  * @example
  * var distance = plott.qualityDistance(-75, 400);

@@ -1,17 +1,12 @@
-var rssiQuality = require('../'),
-    test = require('tape'),
-    path = require('path');
+var qualityDistance = require('../'),
+    test = require('tape');
 
-    test('dBm', function (t){
-      var quality = rssiQuality(-75);
-      t.equal(quality, 0.5, 'value ok');
-      quality = rssiQuality(-100);
-      t.equal(quality, 0,  'value ok');
-      quality = rssiQuality(-50);
-      t.equal(quality, 100, 'value ok');
+    test('distance', function (t){
+      var distance = qualityDistance(-75, 400);
+      t.equal(distance, 200, 'value ok');
 
       t.throws(function(){
-        rssiQuality('dog');
+        qualityDistance(-93, 'dog');
       }, 'Integer Required');
 
       t.end();

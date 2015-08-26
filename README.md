@@ -5,16 +5,16 @@
 Converts quality of RSSI signal strength to distance
 
 
-### `plott.qualityDistance(dBm, maximum)`
+### `plott.qualityDistance(m, p)`
 
 Converts quality of RSSI signal strength to distance.
 
 ### Parameters
 
-| parameter | type    | description        |
-| --------- | ------- | ------------------ |
-| `dBm`     | Integer | RSSI dBm           |
-| `maximum` | Number  | coverage of signal |
+| parameter | type    | description                |
+| --------- | ------- | -------------------------- |
+| `m`       | Integer | dBm RSSI dBm               |
+| `p`       | Number  | maximum coverage of signal |
 
 
 ### Example
